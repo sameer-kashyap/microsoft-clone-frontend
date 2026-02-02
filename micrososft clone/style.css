@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #262626;
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+/* nav  */
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 30px;
+    padding: 16px 6px 16px 10px;
+    font-size: 13px;
+}
+.main-nav ul {
+    display: flex;
+    gap: 20px;
+}
+.main-nav ul.main-menu {
+flex: 1;
+margin-left: 20px;
+
+}
+.main-nav .logo{
+    height: 23px;
+    width: 108px;
+    margin: -3px 0 0;
+}
+.right-menu a{
+    font-size: 16px;
+}
+.main-nav a:hover{
+border-bottom: 1.8px solid black;
+}
+.all:hover{
+    border-bottom: 1.8px solid black;
+}
+.showcase{
+    background-image: url("laptops.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 507px;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+.showcase header{
+    height: 269px;
+    width: 450px;
+    margin-top: 100px;
+}
+.showcase button{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #0067B8;
+    color: white;
+}
+button:hover{
+    opacity: 0.9;
+}
+.showcase h2, .showcase p{
+    margin-bottom: 10px;
+}
+.showcase button{
+    margin-top: 20px;
+}
+.home-cards{
+    padding-top: 40px;
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    border-radius: 89px;
+    margin-bottom: 40px;
+    
+}
+.home-cards img{
+    width: 100%;
+    
+}
+.home-cards h3,.home-cards p{
+    margin-top: 10px;
+}
+.home-cards h3{
+    font-size: 24px;
+}
+.home-cards a{
+    cursor: pointer;
+    
+    border: 0;
+    font-weight: bold;
+    
+    
+    color:#0067B8;
+    margin-top: 20px;
+    display: grid;
+
+}
+.home-cards a:hover{
+    text-decoration: underline;
+}
+.content button {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #0067B8;
+    color: white;
+    
+}
+
+.xbox {
+    height: 540px;
+    max-width: 90%;
+    margin: auto;
+    background-image: url("Xbox-Series-S.webp");
+    background-size: contain;
+     background-repeat: no-repeat; 
+    background-position: center center;
+    
+
+}
+.xbox .content{
+    width: 500px;
+    height: 260px;
+    padding: 200px 0 0 60px;
+    text-align: center;
+    
+    
+}
+.content p,.content h3,.content button{
+    margin: 5px;
+}
+.content p{
+    margin: 10px 0 20px;
+}
+.h3{
+    width: 90%;
+    margin: auto;
+    font-size: 32px;
+    font-weight:500;
+    margin-top: 20px;
+}
+.follow
+{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+.links {
+    background-color: #dddddd;
+
+}
+.links-inner{
+    display: flex;
+    justify-content: space-around;
+}
+.links-inner li{
+    font-weight: 100;
+    font-size: small;
+    padding-top: 20px;
+
+}
+.links-inner li:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:700px)
+{
+    .home-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .xbox .content p {
+        display: none;
+
+
+    }
+    .xbox .content h3{
+        
+        display: none;
+    } 
+    .xbox .content button {
+        display: none;
+    }
+    .links-inner{
+        flex-wrap: wrap;
+    }
+    .main-nav ul.main-menu{
+        display: none;
+    }
+    .showcase header{
+        display: none;
+    }
+}
